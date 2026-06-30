@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "standalone",
   allowedDevOrigins: [
     "writes-fabulous-connected-gmt.trycloudflare.com",
     "*.trycloudflare.com",
