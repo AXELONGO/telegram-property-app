@@ -37,7 +37,9 @@ export async function POST(req: Request) {
 
     // Validar variables de entorno
     const clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
-    const privateKey = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n");
+    const privateKey = process.env.GOOGLE_PRIVATE_KEY
+      ?.replace(/^"|"$/g, "")
+      .replace(/\\n/g, "\n");
     const spreadsheetId = process.env.SPREADSHEET_ID;
 
     if (!clientEmail || !privateKey || !spreadsheetId) {
