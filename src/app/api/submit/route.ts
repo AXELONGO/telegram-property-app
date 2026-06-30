@@ -44,7 +44,7 @@ export async function POST(req: Request) {
 
     if (!clientEmail || !privateKey || !spreadsheetId) {
       return NextResponse.json(
-        { success: false, message: "Faltan variables de entorno de Google Sheets" },
+        { success: false, message: "Faltan variables de entorno de Google Sheets", parsedKeyStart: privateKey.substring(0, 50) },
         { status: 500 }
       );
     }
@@ -109,11 +109,15 @@ export async function POST(req: Request) {
       id: generatedId,
       sheet: sheetName,
     });
-  } catch (error: unknown) {
-    const message = error instanceof Error ? error.message : "Error desconocido";
-    console.error("❌ Error en API /submit:", message);
+  } catch (error: any) {
+    console.error("Error al interactuar con Google Sheets:", error);
     return NextResponse.json(
-      { success: false, message: "Error al guardar en Google Sheets", error: message },
+      { 
+        success: false, 
+        message: "Error al guardar en Google Sheets",
+        error: error.message,
+        parsedKeyStart: privateKey?.substring(0, 50)
+      },
       { status: 500 }
     );
   }
