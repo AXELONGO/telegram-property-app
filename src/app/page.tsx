@@ -14,6 +14,12 @@ import {
   Loader2,
 } from "lucide-react";
 
+declare global {
+  interface Window {
+    Telegram: any;
+  }
+}
+
 // Exactamente los campos que existen en Google Sheets (sin extras)
 interface FormData {
   title: string;
