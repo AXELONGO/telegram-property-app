@@ -1,0 +1,92 @@
+2026-06-30T04:14:30Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of [33mPort forwarding for 0761294fa4305b87-189-223-85-166.serveousercontent.com expired
+[0muse a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-06-30T04:14:30Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-06-30T04:14:34Z INF +--------------------------------------------------------------------------------------------+
+2026-06-30T04:14:34Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-06-30T04:14:34Z INF |  https://writes-fabulous-connected-gmt.trycloudflare.com                                   |
+2026-06-30T04:14:34Z INF +--------------------------------------------------------------------------------------------+
+2026-06-30T04:14:34Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-06-30T04:14:34Z INF Version 2026.6.0 (Checksum 97f48e6b1893b0eee1a3f53806467284d7029928f648176fe83e62e544983acd)
+2026-06-30T04:14:34Z INF GOOS: darwin, GOVersion: go1.26.4, GoArch: arm64
+2026-06-30T04:14:34Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:3000]
+2026-06-30T04:14:34Z INF cloudflared will not automatically update if installed by a package manager.
+2026-06-30T04:14:34Z INF Generated Connector ID: 1e75ef7e-4011-486f-93ec-c8051cfdc516
+2026-06-30T04:14:34Z INF Initial protocol quic
+2026-06-30T04:14:34Z INF ICMP proxy will use 192.168.1.214 as source for IPv4
+2026-06-30T04:14:34Z INF ICMP proxy will use fe80::1897:42d1:a26d:948b in zone en0 as source for IPv6
+2026-06-30T04:14:34Z INF Created ICMP proxy listening on 192.168.1.214:0
+2026-06-30T04:14:34Z INF ICMP proxy will use 192.168.1.214 as source for IPv4
+2026-06-30T04:14:34Z INF ICMP proxy will use fe80::1897:42d1:a26d:948b in zone en0 as source for IPv6
+2026-06-30T04:14:34Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-06-30T04:14:34Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 ev
+
+
+===========================
+Time exceeded
+===========================
+
+
+
+Connection to a.pinggy.io closed by remote host.
+-+
+2026-06-30T04:14:34Z INF |                               CONNECTIVITY PRE-CHECKS                               |
+2026-06-30T04:14:34Z INF +-------------------------------------------------------------------------------------+
+2026-06-30T04:14:34Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                       |
+2026-06-30T04:14:34Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-06-30T04:14:34Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-06-30T04:14:34Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-06-30T04:14:34Z INF |  UDP Connectivity  region2.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-06-30T04:14:34Z INF |  TCP Connectivity  region1.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-06-30T04:14:34Z INF |  TCP Connectivity  region2.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-06-30T04:14:34Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable              |
+2026-06-30T04:14:34Z INF |                                                                                     |
+2026-06-30T04:14:34Z INF |  SUMMARY: Environment is healthy. cloudflared will use 'quic' as primary protocol.  |
+2026-06-30T04:14:34Z INF +-------------------------------------------------------------------------------------+
+2026-06-30T04:14:34Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=fe70a320-e978-457c-8d5a-e3927309026a status=pass target=region1.v2.argotunnel.com
+2026-06-30T04:14:34Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=fe70a320-e978-457c-8d5a-e3927309026a status=pass target=region2.v2.argotunnel.com
+2026-06-30T04:14:34Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=fe70a320-e978-457c-8d5a-e3927309026a status=pass target=region1.v2.argotunnel.com
+2026-06-30T04:14:34Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=fe70a320-e978-457c-8d5a-e3927309026a status=pass target=region2.v2.argotunnel.com
+2026-06-30T04:14:34Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=fe70a320-e978-457c-8d5a-e3927309026a status=pass target=region1.v2.argotunnel.com
+2026-06-30T04:14:34Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=fe70a320-e978-457c-8d5a-e3927309026a status=pass target=region2.v2.argotunnel.com
+2026-06-30T04:14:34Z INF precheck component="Cloudflare API" details="API is reachable" run_id=fe70a320-e978-457c-8d5a-e3927309026a status=pass target=api.cloudflare.com:443
+2026-06-30T04:14:34Z INF precheck complete hard_fail=false run_id=fe70a320-e978-457c-8d5a-e3927309026a suggested_protocol=quic
+2026-06-30T04:14:34Z INF Registered tunnel connection connIndex=0 connection=2d4bef41-81c7-40b6-904a-837848726f2c event=0 ip=2606:4700:a0::6 location=qro01 protocol=quic
+2026-06-30T04:18:09Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:18:09Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/_next/webpack-hmr event=0 ip=2606:4700:a0::6 type=ws
+2026-06-30T04:18:10Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:18:10Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/_next/webpack-hmr event=0 ip=2606:4700:a0::6 type=ws
+2026-06-30T04:18:12Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:18:12Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/_next/webpack-hmr event=0 ip=2606:4700:a0::6 type=ws
+2026-06-30T04:18:13Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:18:13Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/_next/webpack-hmr event=0 ip=2606:4700:a0::6 type=ws
+2026-06-30T04:18:14Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:18:14Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/_next/webpack-hmr event=0 ip=2606:4700:a0::6 type=ws
+2026-06-30T04:18:15Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:18:15Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/_next/webpack-hmr event=0 ip=2606:4700:a0::6 type=ws
+2026-06-30T04:18:21Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:18:21Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/_next/webpack-hmr event=0 ip=2606:4700:a0::6 type=ws
+2026-06-30T04:18:50Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:18:50Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/_next/webpack-hmr event=0 ip=2606:4700:a0::6 type=ws
+2026-06-30T04:18:58Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:18:58Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/_next/webpack-hmr event=0 ip=2606:4700:a0::6 type=ws
+2026-06-30T04:18:59Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:18:59Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: net/http: HTTP/1.x transport connection broken: malformed HTTP response \"Unauthorized\"" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/_next/webpack-hmr event=0 ip=2606:4700:a0::6 type=ws
+2026-06-30T04:47:06Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:47:06Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:47:06Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/api/submit event=0 ip=2606:4700:a0::6 type=http
+2026-06-30T04:47:06Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/api/submit event=0 ip=2606:4700:a0::6 type=http
+2026-06-30T04:49:15Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-06-30T04:49:15Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://writes-fabulous-connected-gmt.trycloudflare.com/api/submit event=0 ip=2606:4700:a0::6 type=http
+2026-06-30T05:24:54Z ERR failed to run the datagram handler error="write udp6 [::]:61037->[2606:4700:a0::6]:7844: sendmsg: no route to host" connIndex=0 event=0 ip=2606:4700:a0::6
+2026-06-30T05:24:54Z ERR failed to accept incoming stream requests error="failed to accept QUIC stream: write udp6 [::]:61037->[2606:4700:a0::6]:7844: sendmsg: no route to host" connIndex=0 event=0 ip=2606:4700:a0::6
+2026-06-30T05:24:55Z ERR failed to serve tunnel connection error="datagram manager encountered a failure while serving" connIndex=0 event=0 ip=2606:4700:a0::6
+2026-06-30T05:24:55Z ERR Serve tunnel error error="datagram manager encountered a failure while serving" connIndex=0 event=0 ip=2606:4700:a0::6
+2026-06-30T05:24:55Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=2606:4700:a0::6
+2026-06-30T05:24:56Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=2606:4700:a0::6
+2026-06-30T05:24:56Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp6 [::]:61037->[2606:4700:a0::6]:7844: sendmsg: no route to host" connIndex=0 event=0 ip=2606:4700:a0::6
+2026-06-30T05:24:56Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=2606:4700:a0::6
+2026-06-30T05:24:57Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=2606:4700:a8::10
+2026-06-30T05:24:57Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp6 [::]:61037->[2606:4700:a8::10]:7844: sendmsg: no route to host" connIndex=0 event=0 ip=2606:4700:a8::10
+2026-06-30T05:24:57Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=2606:4700:a8::10
+2026-06-30T05:25:04Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026-06-30T05:25:05Z INF Registered tunnel connection connIndex=0 connection=a38afb44-7602-498a-9f8f-471a917ea27e event=0 ip=198.41.200.53 location=dfw08 protocol=quic
