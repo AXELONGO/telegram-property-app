@@ -39,7 +39,7 @@ export async function POST(req: Request) {
     const clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
     const privateKey = process.env.GOOGLE_PRIVATE_KEY
       ?.replace(/^"|"$/g, "")
-      .replace(/\\n/g, "\n");
+      .replace(/(\\+)n/g, "\n");
     const spreadsheetId = process.env.SPREADSHEET_ID;
 
     if (!clientEmail || !privateKey || !spreadsheetId) {
