@@ -367,6 +367,28 @@ Luego, la función `submitForm` se modificó para leer los datos siempre desde `
 
 ---
 
+## BUG #12 — Error de Typescript en compilación (Window.Telegram)
+
+| | |
+|---|---|
+| **Fecha** | 29 Jun 2026 |
+| **Severidad** | 🔴 Crítica |
+| **Estado** | ✅ Resuelto |
+
+**Síntoma**
+Al intentar compilar el proyecto para producción en Hostinger (`npm run build`), el proceso fallaba con el código de error: `Type error: Property 'Telegram' does not exist on type 'Window & typeof globalThis'`.
+
+**Causa Raíz**
+En TypeScript, el objeto global `window` tiene un tipado estricto. El SDK de Telegram Web App inyecta la propiedad `window.Telegram` en tiempo de ejecución, pero TypeScript no sabe que esa propiedad existe durante el tiempo de compilación, lo que causa un fallo de tipado (Type Error).
+
+**Solución Aplicada**
+Se agregó una declaración global (`declare global`) en la parte superior de `page.tsx` para extender la interfaz `Window` nativa y avisarle a TypeScript que la propiedad `Telegram` existe (de tipo `any`), permitiendo que el build pase correctamente sin errores de tipado.
+
+**Archivo Afectado**
+- `src/app/page.tsx`
+
+---
+
 ## 📊 Resumen de Bugs
 
 | # | Descripción | Severidad | Estado |
@@ -382,8 +404,9 @@ Luego, la función `submitForm` se modificó para leer los datos siempre desde `
 | 09 | Datos de prueba duplicados | 🟡 Media | ✅ |
 | 10 | iOS/Telegram no guarda números | 🟠 Alta | ✅ |
 | 11 | Botón Telegram envía datos viejos | 🔴 Crítica | ✅ |
+| 12 | Typescript Error Window.Telegram | 🔴 Crítica | ✅ |
 
-**Total: 11 bugs encontrados y resueltos ✅**
+**Total: 12 bugs encontrados y resueltos ✅**
 
 ---
 
